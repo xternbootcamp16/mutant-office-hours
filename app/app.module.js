@@ -7,5 +7,8 @@
 
     // 3rd Party modules
     'firebase',
+
+    // Custom modules
+    'mutantApp.home',
   ]);
 })();
