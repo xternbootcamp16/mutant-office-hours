@@ -5,12 +5,15 @@
     .module('mutantApp.mutantList')
     .controller('MutantListController', MutantListController);
 
-  function MutantListController() {
+  MutantListController.$inject = ['$firebaseArray'];
+
+  function MutantListController($firebaseArray) {
     var vm = this;
+    var rootRef = firebase.database().ref();
 
     vm.addMutant = addMutant;
     vm.newMutant = new Mutant();
-    vm.mutants = ['Wolverine', 'X23', 'dave'];
+    vm.mutants = $firebaseArray(rootRef);
 
     function Mutant() {
       this.name = '';
@@ -21,7 +24,7 @@
     }
 
     function addMutant() {
-      vm.mutants.push('professor x')
+      vm.mutants.$add(vm.newMutant);
     }
   }
 
