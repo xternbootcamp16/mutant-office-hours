@@ -14,6 +14,7 @@
     vm.addMutant = addMutant;
     vm.newMutant = new Mutant();
     vm.mutants = $firebaseArray(mutantsRef);
+    vm.toggleComplete = toggleComplete;
 
     function Mutant() {
       this.name = '';
@@ -25,6 +26,10 @@
 
     function addMutant() {
       vm.mutants.$add(vm.newMutant);
+    }
+
+    function toggleComplete(mutant) {
+      vm.mutants.$save(mutant);
     }
   }
 
