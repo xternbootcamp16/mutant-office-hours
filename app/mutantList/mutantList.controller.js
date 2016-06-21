@@ -9,11 +9,11 @@
 
   function MutantListController($firebaseArray) {
     var vm = this;
-    var rootRef = firebase.database().ref();
+    var mutantsRef = firebase.database().ref().child('mutants');
 
     vm.addMutant = addMutant;
     vm.newMutant = new Mutant();
-    vm.mutants = $firebaseArray(rootRef);
+    vm.mutants = $firebaseArray(mutantsRef);
 
     function Mutant() {
       this.name = '';
