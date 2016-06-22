@@ -29,6 +29,7 @@
 
     function addMutant() {
       vm.mutants.$add(vm.newMutant);
+      vm.newMutant = new Mutant();
     }
 
     function toggleComplete(mutant) {
