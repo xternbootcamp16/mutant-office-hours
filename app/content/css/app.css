@@ -20,16 +20,16 @@
 
 /* Navbar */
 .title-bar {
-  background: #333;
-  padding: 0.9rem; }
+ background: #333;
+ padding: 0.9rem; }
 
 .top-bar {
-  background: #333; }
-  .top-bar ul {
-    background: #333; }
-    .top-bar ul li {
-      background: #333; }
-      .top-bar ul li a {
-        color: #fff; }
-        .menu-text {
-          color: #fff; }
+ background: #333; }
+ .top-bar ul {
+   background: #333; }
+   .top-bar ul li {
+     background: #333; }
+     .top-bar ul li a {
+       color: #fff; }
+       .menu-text {
+         color: #fff; }
