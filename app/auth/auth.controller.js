@@ -12,8 +12,6 @@
 
     vm.register = register;
     vm.login = login;
-    vm.logout = logout;
-    vm.isLoggedIn = authService.isLoggedIn;
 
     vm.user = {
       email: '',
@@ -40,9 +38,5 @@
         });
     }
 
-    function logout() {
-      authService.logout();
-      $state.go('home');
-    }
   }
 })();
