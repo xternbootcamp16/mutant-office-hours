@@ -19,7 +19,9 @@ module.exports = function(config) {
       'https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js',
       'https://www.gstatic.com/firebasejs/3.0.4/firebase.js',
       'https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.0.1/angularfire.js',
-      'app/**/*.spec.js'
+      'node_modules/angular-mocks/angular-mocks.js',
+      'app/**/*.js',
+      'test/**/*.spec.js'
     ],
 
 
