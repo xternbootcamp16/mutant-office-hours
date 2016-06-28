@@ -12,7 +12,6 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
 
-
     // list of files / patterns to load in the browser
     files: [
       'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js',
@@ -20,8 +19,13 @@ module.exports = function(config) {
       'https://www.gstatic.com/firebasejs/3.0.4/firebase.js',
       'https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.0.1/angularfire.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'app/**/*.js',
-      'test/**/*.spec.js'
+      'app/app.module.js',
+      'app/**/*.module.js',
+      'app/**/*.route.js',
+      'app/**/*.service.js',
+      'app/**/*.controller.js',
+      'app/firebaseConfig.js',
+      'app/**/*.spec.js'
     ],
 
 
