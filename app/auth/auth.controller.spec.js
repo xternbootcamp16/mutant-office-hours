@@ -1,17 +1,36 @@
 describe('AuthController', function() {
   beforeEach(module('mutantApp'));
 
-  var $controller;
+  var $controller, AuthController;
 
-  beforeEach(inject(function(_$controller_){
-    // The injector unwraps the underscores (_) from around the parameter names when matching
-    var $scope = {};
-    $controller = _$controller_('AuthController', { $scope: $scope});
+  beforeEach(inject(function($controller){
+    AuthController = $controller('AuthController', { });
   }));
 
-  describe('$scope.grade', function() {
-    it('sets the strength to "strong" if the password length is >8 chars', function() {
-      console.log($controller)
+  // http://jasmine.github.io/2.4/introduction.html#section-Included_Matchers
+  it('should have set up a user to be defined', function() {
+    expect(AuthController.user).toBeDefined();
+  });
+
+  it('should have a register function', function() {
+    expect(AuthController.register).toBeDefined();
+  });
+
+  it('should have a login function', function() {
+    expect(AuthController.login).toBeDefined();
+  });
+
+  describe('AuthController.register', function() {
+    it('registers a valid user on firebase', function() {
+      console.log('figure out how to test functions');
+      console.log(AuthController);
+    });
+  });
+
+  describe('AuthController.login', function() {
+    it('registers a valid user on firebase', function() {
+      console.log('figure out how to test functions');
+      console.log(AuthController);
     });
   });
 });
