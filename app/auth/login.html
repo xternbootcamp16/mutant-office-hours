@@ -8,7 +8,14 @@
         <div class="callout small alert" ng-show="vm.error" ng-bind="vm.error"></div>
 
         <label>Email
-          <input ng-model="vm.user.email" type="email" name="email" placeholder="somebody@example.com" autofocus required>
+          <input
+            ng-model="vm.user.email"
+            type="email"
+            name="email"
+            placeholder="somebody@example.com"
+            ng-model-options="{ updateOn: 'default blur', debounce: { 'default': 1000, 'blur': 0 } }"
+            autofocus
+            required>
         </label>
 
         <!-- Email errors -->
