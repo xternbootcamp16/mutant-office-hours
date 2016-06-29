@@ -2,7 +2,7 @@
 
     <form ng-submit="authForm.$valid" name="authForm" novalidate>
       <div class="column log-in-form">
-        <h4 class="text-center"></h4>
+        <h4 class="text-center" ng-bind="vm.formName"></h4>
 
         <!-- Server Authentication Errors -->
         <div class="callout small alert" ng-show="vm.error" ng-bind="vm.error">
@@ -36,7 +36,7 @@
         </div>
 
 
-        <p><button type="submit" class="button expanded"></button></p>
+        <p><button type="submit" class="button expanded" ng-bind="vm.formName"></button></p>
       </div>
     </form>
 
