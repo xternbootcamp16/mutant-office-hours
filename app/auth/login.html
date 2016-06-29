@@ -1,6 +1,6 @@
 <div class="medium-6 medium-centered large-4 large-centered columns">
 
-    <form name="authForm" ng-submit="vm.login(vm.user)" novalidate>
+    <form name="authForm" ng-submit="authForm.$valid && vm.login(vm.user)" novalidate>
       <div class="column log-in-form">
         <h4 class="text-center">Log in</h4>
 
@@ -18,7 +18,6 @@
         <div class="callout small alert" ng-show="authForm.$submitted && authForm.email.$error.email">
           Invalid email
         </div>
-
 
         <label>Password
           <input ng-model="vm.user.password" type="password" name="password" placeholder="Password" required>
