@@ -1,6 +1,6 @@
 <div class="medium-6 medium-centered large-4 large-centered columns">
 
-    <form ng-submit="authForm.$valid" name="authForm" novalidate>
+    <form ng-submit="authForm.$valid && vm.submitFunction({user: vm.user})" name="authForm" novalidate>
       <div class="column log-in-form">
         <h4 class="text-center" ng-bind="vm.formName"></h4>
 
