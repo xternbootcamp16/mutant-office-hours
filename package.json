@@ -1,0 +1,27 @@
+{
+  "name": "mutant-office-hours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": "^1.5.7",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
+  },
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xternbootcamp16/mutant-office-hours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xternbootcamp16/mutant-office-hours/issues"
+  },
+  "homepage": "https://github.com/xternbootcamp16/mutant-office-hours#readme"
+}
